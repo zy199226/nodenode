@@ -4,8 +4,8 @@
   "description": "node",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && NODE_ENV=development node ./dist/app.js ",
-    "dev": "./node_modules/nodemon/bin/nodemon.js",
+    "start": "tsc && cross-env NODE_ENV=development node ./dist/app.js ",
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -17,7 +17,10 @@
     "@types/koa": "^2.13.4",
     "@types/koa-router": "^7.4.4",
     "koa": "^2.13.4",
-    "koa-router": "^10.1.1",
+    "koa-router": "^10.1.1"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
     "nodemon": "^2.0.15"
   }
 }
