@@ -1,0 +1,23 @@
+{
+  "name": "nodenode",
+  "version": "1.0.0",
+  "description": "node",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && NODE_ENV=development node ./dist/app.js ",
+    "dev": "./node_modules/nodemon/bin/nodemon.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "zy",
+  "license": "ISC",
+  "dependencies": {
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1",
+    "nodemon": "^2.0.15"
+  }
+}
